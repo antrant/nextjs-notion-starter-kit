@@ -1,13 +1,13 @@
 {
-  "name": "nextjs-notion-starter-kit",
+  "name": "rubikzone",
   "version": "2.0.0",
   "private": true,
-  "description": "The perfect starter kit for building beautiful websites with Next.js and Notion.",
-  "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/nextjs-notion-starter-kit",
+  "description": "Personal Blog",
+  "author": "An Tran",
+  "repository": "antrant/rubikzone",
   "license": "MIT",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "scripts": {
     "dev": "next dev",
@@ -22,7 +22,8 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "test": "run-p test:*",
     "test:lint": "eslint '**/*.{ts,tsx}'",
-    "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check"
+    "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check",
+    "preinstall": "corepack enable && corepack prepare pnpm@latest --activate"
   },
   "dependencies": {
     "@fisch0920/use-dark-mode": "^2.4.0",
