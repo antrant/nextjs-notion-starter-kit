@@ -6,6 +6,7 @@ export interface SiteConfig {
 
   name: string
   domain: string
+  blogSlug: string
   author: string
   description?: string
   language?: string
